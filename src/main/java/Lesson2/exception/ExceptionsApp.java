@@ -20,7 +20,6 @@ public class ExceptionsApp {
         System.out.println();
 
 
-
         //открыли файл open file
         try {
             //читаем read
@@ -37,8 +36,6 @@ public class ExceptionsApp {
         }
 
 
-
-
     }
 
 
@@ -51,17 +48,17 @@ public class ExceptionsApp {
     }
 
 
-
     /**
      * Передали массив. Вернём результат деления первого на второй.
      * Не умеем делить на 10.
+     *
      * @param array
      * @return
      */
     static int divFirstAndSecond(String[] array) throws MyCustomException {
 
         int a = Integer.parseInt(array[0]);
-        int b = Integer.parseInt (array[1]);
+        int b = Integer.parseInt(array[1]);
         if (b == 10) {
             throw new MyCustomException(10);
         }
